@@ -1,0 +1,12 @@
+{
+  "namespace": "docker",
+  "interface": {
+    "name": "docker",
+    "parent": "enp2s0",
+    "mac_address": "auto"
+  },
+  "ip_address": {
+    "mode": "dhcp",
+    "dhcp_client": "dhclient"
+  }
+}

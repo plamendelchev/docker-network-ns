@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker_network_ns"
+authors = [
+  {name = "Plamen Delchev", email = "plamen.delchev@gmail.com"}
+]
+description = "A command-line interface (CLI) tool designed to configure Docker networking within a Linux Network Namespace."
+license = { file = "LICENSE" }
+version = "0.0.1"
+requires-python = ">=3.9"
+dependencies = [
+    "click",
+    "schema",
+    "pyroute2",
+    'importlib-metadata; python_version<"3.9"',
+]
+
+[project.scripts]
+docker_network_ns = "docker_network_ns.__main__:cli"
